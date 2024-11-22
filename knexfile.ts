@@ -12,8 +12,14 @@ const path = require("path");
     migrations: {
       directory: path.resolve(__dirname, "src", "database", "knex", "migrations")
     },
-    useNullAsDefault: true
+   
+
+   seeds:{
+    extension: "ts",
+    directory: path.resolve(__dirname, "src", "database", "seeds")    
+   },
+   useNullAsDefault: true,
   }
 
 };
-export { knextfile };
+export default knextfile;
